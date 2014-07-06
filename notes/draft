@@ -1,0 +1,10 @@
+Revealer precisará de um starting_point que poderá ser uma página, especificando um formulário.
+
+Revealer deverá ser capaz de, uma vez apontada a página e o formulário, determinar para qual controller/action a app direcionará o fluxo.
+
+No controller/action, Revealer deverá identificar a existência de métodos.
+Ao encontrar métodos, Revealer deverá entrar nos métodos e identificar chamadas para outros métodos.
+Para cada método encontrado, Revealer deverá dar a opção de revelar o conteúdo (código) do método.
+Quando tiver retornado todos os métodos possíveis, Revealer deverá seguir o fluxo, redirecionando para outro controller/action.
+Se o controller/action de retorno tiver outros métodos, Revealer deverá repetir o processo acima.
+Caso contrário, deverá apenas exibir o variáveis de demais conteúdos possíveis do controller/action do final do fluxo.
